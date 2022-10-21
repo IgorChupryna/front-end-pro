@@ -1,9 +1,10 @@
+//Task 1
 const operators = {
     '+': function (a, b) {
         return a + b
     },
     '-': function (a, b) {
-        return a < b
+        return a - b
     },
     '/': function (a, b) {
         return a / b
@@ -61,8 +62,7 @@ function calculateTwoOperands(operand, numA, numB) {
 
 
 
-
-
+//Task 2
 const obj = {
     prop: '42',
     prop2: [8, 9, 10, {
@@ -90,7 +90,6 @@ const obj = {
         };
     },
 };
-
 
 console.log(obj.prop2[3]["property with spaces"].a.c.someProperty[0]["prop name"]); // I am a smart programmer
 console.log(obj.prop3().bar.anotherBeautifulProp[1].target); // It was simple!
