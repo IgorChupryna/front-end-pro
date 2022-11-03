@@ -19,10 +19,9 @@ console.log(max2([8, 17]), '2 elements test, must return 17');
 
 
 function max(numbers) {
-    // cycle implementation
     let maxVal = numbers[0];
     for (let i = 1; i < numbers.length; i++) {
-        if (numbers[i] > numbers[i - 1]) {
+        if (numbers[i] > maxVal) {
             maxVal = numbers[i];
         }
     }
@@ -30,5 +29,10 @@ function max(numbers) {
 }
 
 function max2(numbers) {
-    // recursion implementation
+    if (numbers.length === 1) return numbers[0]
+    const [first, ...other] = numbers;
+
+    return first > max2(other)
+        ? first
+        : max2(other)
 }
