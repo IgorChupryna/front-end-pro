@@ -20,6 +20,13 @@ console.log(max2([8, 17]), '2 elements test, must return 17');
 
 function max(numbers) {
     // cycle implementation
+    let maxVal = numbers[0];
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > numbers[i - 1]) {
+            maxVal = numbers[i];
+        }
+    }
+    return maxVal;
 }
 
 function max2(numbers) {
