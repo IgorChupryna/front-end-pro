@@ -31,13 +31,13 @@ function createCalculator(base) {
     let currBase = base;
     return {
         add: (num) => {
-            currBase += isStringNan(num) ? WRONG_OPERAND : num;
+            currBase += isArgNan(num) ? WRONG_OPERAND : num;
         },
         sub: (num) => {
-            currBase -= isStringNan(num) ? WRONG_OPERAND : num;
+            currBase -= isArgNan(num) ? WRONG_OPERAND : num;
         },
         set: (num) => {
-            currBase = isStringNan(num) ? currBase : num;
+            currBase = isArgNan(num) ? currBase : num;
         },
         get: () => currBase,
         reset: () => {
@@ -46,6 +46,6 @@ function createCalculator(base) {
     }
 }
 
-function isStringNan(num) {
+function isArgNan(num) {
     return Number.isNaN(Number(num));
 }
