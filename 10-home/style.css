@@ -1,0 +1,25 @@
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.deleteBtn {
+    margin: 2px;
+    background-color: rgba(197, 90, 65, 0.24);
+}
+
+#btnAddContact {
+    margin: 2px;
+    background-color: #dec35b;
+}
+
+table {
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid #1db6b6;
+}
