@@ -29,6 +29,8 @@ console.log(calculator.get()) // 100
 
 function createCalculator(base) {
     let currBase = base;
+
+
     return {
         add: (num) => {
             currBase += isArgNan(num) ? WRONG_OPERAND : num;
