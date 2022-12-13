@@ -1,11 +1,3 @@
-// CRUD /api/todo
-// POST     https://62054479161670001741b708.mockapi.io/api/todo/
-// GET      https://62054479161670001741b708.mockapi.io/api/todo/
-// GET      https://62054479161670001741b708.mockapi.io/api/todo/42
-// PUT      https://62054479161670001741b708.mockapi.io/api/todo/42
-// DELETE   https://62054479161670001741b708.mockapi.io/api/todo/42
-
-
 class TodoApi {
     static URL = 'https://6398ebbdfe03352a94e1e0ff.mockapi.io/todo/';
 
