@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact book</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./ContactApi.js" defer></script>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+<h1 class="blue">Contact book on Server</h1>
+<table class="listContact">
+    <thead>
+    <tr>
+        <th class="green">Name</th>
+        <th class="green">Surname</th>
+        <th class="green">Phone number</th>
+        <th class="green">UPDATE</th>
+        <th class="green">DELETE</th>
+    </tr>
+    </thead>
+    <tbody id="bodyContact">
+    </tbody>
+</table>
+
+<form id="contactForm" class="form">
+    <input id="contactId" type="hidden"/>
+    <label for="inpName"><input id="inpName" type="text"></label>
+    <label for="inpSurname"><input id="inpSurname" type="text"></label>
+    <label for="inpPhone"><input id="inpPhone" type="text"></label>
+    <button id="btnAddContact">Save</button>
+</form>
+
+</body>
+</html>

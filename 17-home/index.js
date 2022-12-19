@@ -43,6 +43,9 @@ function onTodoListClick(e) {
     const todoEl = getTodoEl(target);
     const id = getTodoElId(todoEl);
 
+
+
+
     if (target.classList.contains(DELETE_BTN_CLASS)) {
         TodoApi.delete(id)
             .then(() => {
