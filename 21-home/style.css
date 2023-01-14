@@ -1,0 +1,67 @@
+table {
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid #1db6b6;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+#addContactBtn {
+    width: 20%;
+    margin: 2px;
+    background-color: rgba(117, 181, 201, 0.52);
+}
+
+#addContactBtn:hover {
+    background-color: #efeee6;
+}
+
+.deleteBtn {
+    width: 80%;
+    margin: 2px;
+    background-color: rgba(197, 90, 65, 0.24);
+}
+
+.updateBtn {
+    width: 80%;
+    margin: 2px;
+    background-color: rgba(250, 237, 68, 0.83);
+}
+
+#contactForm {
+    width: 700px;
+    margin-top: 10px;
+    border: 2px solid #b391c7;
+}
+
+.listContact {
+    width: 700px;
+}
+
+.main-container{
+    width: 700px;
+}
+
+button:hover {
+    background-color: #efeee6;
+    cursor: pointer;
+}
+
+.heading {
+    height: 35px;
+    border-bottom: 2px solid rgba(86, 145, 116, 0.93);
+    margin-bottom: 5px;
+}
+
+.heading button {
+    float: right;
+    margin: 5px;
+}

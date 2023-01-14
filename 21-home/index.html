@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact book</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./style.css"/>
+
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./ContactApi.js" defer></script>
+    <script src="./index.js" defer></script>
+
+</head>
+<body>
+<h1 class="blue">Contact book on Server</h1>
+<div class="main-container">
+    <div class="row heading">
+        <button id="addContactBtn" class="button-primary">Add Contact</button>
+    </div>
+    <table class="listContact">
+        <thead>
+        <tr>
+            <th class="green">Name</th>
+            <th class="green">Surname</th>
+            <th class="green">Phone number</th>
+            <th class="green">UPDATE</th>
+            <th class="green">DELETE</th>
+        </tr>
+        </thead>
+        <tbody id="bodyContact">
+        </tbody>
+    </table>
+</div>
+
+<div id="dialog-form" title="Save contact">
+    <form>
+        <fieldset>
+            <input id="contactId" class="formInput" type="hidden" name="id"/>
+            <label for="inpName">Name</label>
+            <input type="text" name="name" id="inpName" class="formInput text ui-widget-content ui-corner-all">
+            <label for="inpSurname">Surname</label>
+            <input type="text" name="surname" id="inpSurname" class="formInput text ui-widget-content ui-corner-all">
+            <label for="inpPhone">Phone</label>
+            <input type="number" name="phone" id="inpPhone" class="formInput text ui-widget-content ui-corner-all">
+
+            <!-- Allow form submission with keyboard without duplicating the dialog button -->
+            <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>
