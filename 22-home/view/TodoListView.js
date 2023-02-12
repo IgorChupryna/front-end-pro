@@ -26,7 +26,7 @@ class TodoListView {
   onDeleteBtnClick(e) {
     const todoItem = this.getTodoEl(e.target);
     const id = this.getTodoElId(todoItem);
-
+    console.log(this.options)
     this.options.onDelete(id);
   }
 

@@ -1,0 +1,102 @@
+table {
+    border: 1px solid black;
+}
+
+th {
+    border: 1px solid #1db6b6;
+    background-color: antiquewhite;
+}
+
+td {
+    border: 1px solid #1db6b6;
+}
+
+.listStudent {
+    width: 800px;
+}
+
+
+
+.textStudent {
+    background-color: rgba(184, 233, 245, 0.24);
+    width: 10%;
+}
+
+.studentComplete,.studentNew{
+    cursor: pointer;
+}
+
+
+
+.btnStudent {
+    width: 10%;
+}
+
+
+
+#addStudentBtn {
+    background-color: rgba(238, 206, 10, 0.24);
+}
+
+#studentForm {
+    margin-top: 10px;
+}
+
+
+
+.formInput {
+    width: 400px;
+}
+
+
+
+.studentNew {
+    background-color: rgba(184, 233, 245, 0.24);
+}
+
+.studentComplete {
+    background-color: rgba(3, 245, 23, 0.53);
+}
+
+.inputStudent {
+    border: none;
+}
+
+.studentUpd {
+    background-color: rgba(2, 234, 20, 0.53);
+}
+
+
+
+.deleteBtn {
+    margin: 2px;
+    background-color: rgba(197, 90, 65, 0.24);
+}
+
+.editBtn {
+    margin: 2px;
+    background-color: rgba(250, 237, 68, 0.83);
+}
+
+.editBtn:hover, .deleteBtn:hover {
+    background-color: #efeee6;
+    cursor: pointer;
+}
+
+
+
+.student-name{
+    width: 30%;
+}
+
+.student-marks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-marks input{
+    width: 40px;
+    margin-left: 5px;
+    text-align: center;
+}
